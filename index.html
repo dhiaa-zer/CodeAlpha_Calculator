@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="css/theme1.css">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    
+ 
+</head>
+
+
+<body>
+    <main class="Calculator">
+       <div class="header">
+        
+         <div class="input">
+          <p id="t1">Calculator</p>
+          <p id="t2">Theme</p>
+           
+          <div class="themes">
+            <input id="theme1" type="radio" name="theme" value="0" checked>
+            <label for="theme1">1</label>
+            
+            <input id="theme2" type="radio" value="1" name="theme">
+            <label for="theme2">2</label>
+          </div>
+
+         </div>
+        
+         <div class="screen">
+               <div data-previous class="previous"> </div>
+               <div data-current class="current"></div>  
+         </div>
+       </div>
+         <div class="grid-container">
+           <button  data-value="7">7</button>
+           <button data-value="8">8</button>
+           <button data-value="9">9</button>
+           <button data-action="Delete">DEL</button>
+           <button data-value="4">4</button>
+           <button data-value="5">5</button>
+           <button data-value="6">6</button>
+           <button data-action="operator" data-value="+">+</button>
+           <button data-value="1">1</button>
+           <button data-value="2">2</button>
+           <button data-value="3">3</button>
+           <button data-value="-" data-action="operator">-</button>
+           <button data-value=".">.</button>
+           <button data-value="0">0</button>
+           <button data-value="/" data-action="operator">/</button>
+           <button data-value="*" data-action="operator">x</button>
+           <button data-action="reset">RESET</button>
+           <button data-action="equal" data-value="=">=</button>
+         </div>
+
+    
+    </main>
+   
+
+
+  
+
+</body>
+</html>
