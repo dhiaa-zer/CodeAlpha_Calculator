@@ -1,7 +1,7 @@
 
 :root {
     /* Backgrounds */
-    --light-gray-main-bg: hsl(0, 0%, 90%);
+    --light-gray-main-bg:hsl(185, 36%, 33%);
     --grayish-red-toggle-keypad-bg: hsl(0, 5%, 81%);
     --very-light-gray-screen-bg: hsl(0, 0%, 93%);
   
@@ -143,14 +143,37 @@ background-color:var(--red-key-bg-toggle);
 }
 
 
-.screen{
-background-color: var(--very-light-gray-screen-bg);
-color: white;
-width: 100%;
-height: 60% ;
-border-radius: 8px;
-}
 
+.screen{
+  background-color: var(--very-light-gray-screen-bg);
+  color: white;
+  width: 100%;
+  height: 60% ;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 12px 7px ;
+  gap: 10px;
+  padding-bottom: 0;
+  }
+  
+  .previous{
+     height: 30%;
+     font-weight: 600;
+     font-size: 1.2rem;
+     color: var(--very-dark-grayish-yellow-text)
+  }
+  
+  .current {
+     height: 70%;
+     font-size: 2.5rem;
+     font-weight: 600;
+     align-self: self-end;
+     padding-right:5px ;
+     color: var(--very-dark-grayish-yellow-text);
+  }
+  
 
 .grid-container{
 border-radius: 8px;
@@ -169,7 +192,7 @@ border-radius: 5px;
 font-size: 1.8rem;
 font-weight: 700;
 cursor: pointer;
-color: var(--Very_dark_grayish_blue);
+color: var(--very-dark-grayish-yellow-text);
 background-color: var(--light-grayish-yellow-key-bg);
 box-shadow: 0 5px var(--dark-grayish-orange-key-shadow);
 border: 0;
