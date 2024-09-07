@@ -174,7 +174,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 gap: 15px;
 background-color: var(--very-dark-desaturated-blue-toggle-keypad-bg);
 height: 70%;
+max-width: 100%; 
 width: 100%;
+overflow: hidden;
 }
 
 
