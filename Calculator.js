@@ -50,41 +50,62 @@ function add_previous(op) {
 
 // Calculation
 function calcul() {
-    const operandsRegex = /[\d.]+/g;
-    const operatorRegex = /[+\-x\/]/g;
-    let mytext = previous.innerText + current.innerText;
-    const operands = mytext.match(operandsRegex)?.map(Number) || [];
-    const operator = mytext.match(operatorRegex);
+    if(current.innerText.length!=''){
+
     
-    if (operator.length != 0 && operands.length == 2) {
-        switch (operator[0]) {
+    const currentValue = parseFloat(current.innerText);  
+    const previousValueParts = previous.innerText.split(' ');  
+
+    if (previousValueParts.length === 2) {
+        const previousValue = parseFloat(previousValueParts[0]);  
+        const operator = previousValueParts[1];
+
+        let result;
+        switch (operator) {
             case '+':
-                current.innerText = String(operands[0] + operands[1]);
-            
+                result = previousValue + currentValue;
                 break;
             case 'x':
-                current.innerText = String(operands[0] * operands[1]);
-                
+                result = previousValue * currentValue;
                 break;
             case '/':
-                current.innerText = String(operands[0] / operands[1]);
-                
+                result = currentValue === 0 ? 'Error' : previousValue / currentValue;
+                break;
+            case '-':
+                result = previousValue - currentValue;
                 break;
             default:
-                current.innerText = String(operands[0] - operands[1]);
-                
+                return;
         }
-        previous.innerText = "";
-        resultDisplayed=true;
+
+        // Display the result and reset previous value
+        current.innerText = String(result);
+        previous.innerText = '';
+        resultDisplayed = true;
     }
+}
+else{
+    current.innerText='Error' ;
+    previous.innerText='';
+    resultDisplayed=true;
+}
 }
 
 function Keyboard(event){
     const key = event.key;  
     if(key==='-' && current.innerText===''){
         add_current(key);
+        resultDisplayed=false;
         return ;
      }
+
+     if(/[+\x\/]/.test(key)&& current.innerText==='' && previous.innerText==='' || current.innerText==='-'){
+        return ;
+     }
+
+    
+
+
     if (!isNaN(key) || key==='.') {
        
         if(resultDisplayed){
@@ -147,8 +168,12 @@ N_btn.forEach(number => {
 
 op_btn.forEach(operation => {
     operation.addEventListener('click', () => {
+         if(operation.innerText!='-' && current.innerText==='' && previous.innerText==='' || current.innerText==='-'){
+            return ;
+         }
          if(operation.innerText==='-' && current.innerText===''){
             add_current(operation.innerText);
+            resultDisplayed=false;
             return ;
          }
 
