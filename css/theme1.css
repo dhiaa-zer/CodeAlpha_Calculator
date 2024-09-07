@@ -248,7 +248,7 @@ height: 25%;
 .current{
    font-size: 2rem;
 }
-button[data-action="reset"], button[data-action="equal"] {
+button[data-action="reset"], button[data-action="equal"],button[data-action='Delete'] {
    font-size: 1.2rem; /* Make larger buttons smaller */
  }
 
