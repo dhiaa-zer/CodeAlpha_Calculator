@@ -99,7 +99,7 @@ function Keyboard(event){
         return ;
      }
 
-     if(/[+\x\/]/.test(key)&& current.innerText==='' && previous.innerText==='' || current.innerText==='-'){
+     if(/[.+\x\/]/.test(key)&& current.innerText==='' && previous.innerText==='' ||/[.+\x\/]/.test(key)&& current.innerText==='-'){
         return ;
      }
 
@@ -157,6 +157,10 @@ reset.addEventListener('click', () => {
 
 N_btn.forEach(number => {
     number.addEventListener('click', () => {
+        if(number.innerText==='.' && current.innerText==='' && previous.innerText==='' ||number.innerText==='.'&& current.innerText==='-'){
+            return ;
+         }
+
         if(resultDisplayed){
             current.innerText='';
             resultDisplayed=false;
