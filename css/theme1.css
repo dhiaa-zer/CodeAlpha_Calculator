@@ -38,6 +38,7 @@ font-size:0.7rem;
 }
 html{
    touch-action: manipulation;
+ 
 }
 
 
@@ -230,6 +231,7 @@ button:active{
 
 .Calculator{
  height: 90vh;
+ overflow: hidden;
 }
 
 .header{
@@ -237,9 +239,7 @@ button:active{
 
 }
 
-.grid-container{
-   grid-template-columns:  auto auto auto auto;
-}
+
 
 .previous{
    font-size: 1.2rem;
