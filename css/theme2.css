@@ -237,28 +237,30 @@ opacity: 0.8;
 
 
 
-
 @media only screen and (max-width : 400px ) {
 
-  .Calculator{
-   height: 90vh;
-  }
-  
-  .grid-container{
-  height: 70%;
-  }
-  
-  .header{
-  height: 25%;
-  }
-  
-  .previous{
-     font-size: 1rem;
-  
-  }
-  .current{
-     font-size: 1.8rem;
-  }
-  
-  
-  }
+   .Calculator{
+    height: 90vh;
+    max-width: 100%;
+   }
+   
+   .grid-container{
+   height: 70%;
+   }
+   
+   .header{
+   height: 25%;
+   }
+   
+   .previous{
+      font-size: 1.2rem;
+   
+   }
+   .current{
+      font-size: 2rem;
+   }
+   button[data-action="reset"], button[data-action="equal"],button[data-action='Delete'] {
+      font-size: 1.2rem; /* Make larger buttons smaller */
+    }
+   
+   }
