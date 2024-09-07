@@ -228,10 +228,20 @@ button:active{
 }
 
 .grid-container{
-height: 60%;
+height: 70%;
 }
 
 .header{
 height: 20%;
 }
+
+.previous{
+   font-size: 1rem;
+
+}
+.current{
+   font-size: 1.8rem;
+}
+
+
 }

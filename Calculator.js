@@ -32,7 +32,7 @@ function add_current(value) {
     if (value === '.' && current.innerText.includes('.')) {
         return;  
     }
-    if(current.innerText.length>16){
+    if(current.innerText.length>15){
         return ;
     }
     current.innerText += String(value);
