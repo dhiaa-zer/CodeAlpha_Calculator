@@ -176,7 +176,7 @@ background-color: var(--very-dark-desaturated-blue-toggle-keypad-bg);
 height: 70%;
 max-width: 100%; 
 width: 100%;
-overflow: hidden;
+
 }
 
 
@@ -230,6 +230,7 @@ button:active{
 
 .Calculator{
  height: 90vh;
+ max-width: 100%;
 }
 
 .grid-container{
@@ -247,5 +248,8 @@ height: 25%;
 .current{
    font-size: 2rem;
 }
+button[data-action="reset"], button[data-action="equal"] {
+   font-size: 1.2rem; /* Make larger buttons smaller */
+ }
 
 }
