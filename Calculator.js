@@ -152,7 +152,7 @@ op_btn.forEach(operation => {
             return ;
          }
 
-        if(current.innerText.length!=0 && previous.innerText.length!=0 && operatorPresent ){
+        if(current.innerText.length!=0 && previous.innerText.length!=0  ){
            calcul();
         }
         add_previous(operation.innerText);
