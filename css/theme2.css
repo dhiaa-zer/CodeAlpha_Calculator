@@ -232,17 +232,28 @@ opacity: 0.8;
 
 
 
+
 @media only screen and (max-width : 375px ) {
 
-.Calculator{
- height: 90vh;
-}
-
-.grid-container{
-height: 60%;
-}
-
-.header{
-height: 20%;
-}
-}
+  .Calculator{
+   height: 90vh;
+  }
+  
+  .grid-container{
+  height: 70%;
+  }
+  
+  .header{
+  height: 30%;
+  }
+  
+  .previous{
+     font-size: 1rem;
+  
+  }
+  .current{
+     font-size: 1.8rem;
+  }
+  
+  
+  }
