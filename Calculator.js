@@ -64,20 +64,20 @@ function calcul() {
         switch (operator) {
             case '+':
                 result = previousValue + currentValue;
-                result=result.toFixed(6);
+                
                 break;
             case 'x':
                 result = previousValue * currentValue;
-                result=result.toFixed(6);
+               
                 break;
             case '/':
                 result = currentValue === 0 ? 'Error' : previousValue / currentValue;
-                result=result.toFixed(6);
+                
 
                 break;
             case '-':
                 result = previousValue - currentValue;
-                result=result.toFixed(6);
+                
 
                 break;
             default:
