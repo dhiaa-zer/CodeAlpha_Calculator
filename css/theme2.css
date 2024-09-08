@@ -245,8 +245,6 @@ opacity: 0.8;
 
    }
    
-   
-   
    .header{
    height: 25%;
    }
@@ -271,7 +269,9 @@ opacity: 0.8;
    .grid-container{
       gap: 12px;
       padding: 15px;
-      height: 63%;
+      height: 65%;
    }
-   
+   .Calculator{
+      width: 95%;
+   }
 }
