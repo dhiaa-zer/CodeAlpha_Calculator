@@ -255,12 +255,12 @@ button[data-action="reset"], button[data-action="equal"],button[data-action='Del
 }
 
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:350px) {
    
    .grid-container{
       gap: 12px;
       padding: 15px;
-      
+      height: 65%;
    }
    
 }
