@@ -239,8 +239,6 @@ button:active{
 
 }
 
-
-
 .previous{
    font-size: 1.2rem;
 
@@ -249,9 +247,8 @@ button:active{
    font-size: 2rem;
 }
 button[data-action="reset"], button[data-action="equal"],button[data-action='Delete'] {
-   font-size: 1rem; /* Make larger buttons smaller */
+   font-size: 1.2rem; /* Make larger buttons smaller */
  }
 
  
-
 }

@@ -241,12 +241,11 @@ opacity: 0.8;
 
    .Calculator{
     height: 90vh;
-    max-width: 100%;
+    overflow: hidden;
+
    }
    
-   .grid-container{
-   height: 70%;
-   }
+   
    
    .header{
    height: 25%;
